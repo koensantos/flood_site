@@ -1,0 +1,115 @@
+latitude_dd,Horizontal location of HWM in decimal degrees (not location of associated site)
+longitude_dd,Horizontal location of HWM in decimal degrees (not location of associated site)
+latitude,repeat of latitude_dd
+longitude,repeat of longitude_dd
+eventName,Event name
+hwmTypeName,Type of HWM evience.  See hwm_type_id for current possibilities.
+hwmQualityName,Flagging uncertainty of HWM.  See hwm_quality_id for current possibilities.
+verticalDatumName,Reference datum used to survey elevation of HWM.  See vdatum_id for current possibilities.
+verticalMethodName,Survey method for establishing elevation of HWM.  See vcollect_method_id for current possilities:
+approvalMember,USGS employee responsible for approving this HWM record
+markerName,Type of marker used to flag the HWM prior to survey.  See marker_id for current possibilities:
+horizontalMethodName,Method used to establish the horizontal location of the HWM (often at time of flagging).  See hcollect_method_id for possible values.
+horizontalDatumName,Reference datum used to establish the horizontal location of the HWM (often at time of flagging)
+flagMemberName,USGS employee who flagged the HWM
+surveyMemberName,USGS employee who surveyed the HWM elevation
+site_no,Full site number (including State/County abbreviation and site ID)
+siteDescription,Description of Site
+sitePriorityName,"Site deployment priority (used primarily for sensor deployments, not HWM campaigns).  Possibilities include:
+Network critical
+Secondary development
+Desired but not required"
+networkNames,"USGS groupings of sites (may overlap).  Possibilities include:
+Coastal Change Hazards (CCH)
+Gulf of Mexico
+North Atlantic
+Not Defined
+SCoRE
+South Atlantic
+SWaTH"
+stateName,State abbreviation
+countyName,County name
+siteZone,USGS water science center zone designation (largely unused)
+sitePermHousing,Indicates established equipment location
+site_latitude,Horizontal location of Site of common water surface (not location of HWM)
+site_longitude,Horizontal location of Site of common water surface (not location of HWM)
+hwm_id,Unique ID assigned to each HWM in the system
+waterbody,Body of water most likely associated with the HWM
+site_id,Unique integer ID assigned to each Site in the system
+event_id,Unique integer ID assigned to each Event in the system
+hwm_type_id,"HWM type code.  Current possibilities:
+1 Mud
+2 Debris
+3 Clear water
+4 Vegetation line
+5 Seed line
+6 Stain line
+7 Melted snow line
+8 Present at peak (direct observation)
+9 Other (Note in Description box)"
+hwm_quality_id,"HWM quality code.  Current possibilities:
+1 Excellent: +/- 0.05 ft
+2 Good: +/- 0.10 ft
+3 Fair: +/- 0.20 ft
+4 Poor: +/- 0.40 ft
+5 VP: > 0.40 ft
+6 Unknown/Historical"
+hwm_locationdescription,Narrative of location of HWM at time of flagging
+survey_date,Date HWM was surveyed (not date of peak)
+elev_ft,Surveyed elevation of HWM in feet
+vdatum_id,"Code for reference datum of vertical survey of HWM.  Current Possibilities:
+1 local control point
+2 NAVD88
+3 Above Ground Level
+4 NGVD29
+6 PRVD02
+7 VIVD09
+8 International Great Lakes Datum of 1985"
+vcollect_method_id,"Code for vertical survey method of HWM.  Current possibilities:
+1 Tape measure
+2 Level Gun
+3 Hand level
+4 Other (Note in Description box)
+5 Total Station
+6 RT-GNSS
+7 Static-GNSS"
+bank,"Location of HWM relative to stream as viewed from upstream looking downstream.  Choices: ""Left"", ""Right"", or ""N/A""."
+approval_id,? unknown ?
+marker_id,"Marker type used to flag the HWM.  Current possibilities:
+1 Chalk test
+2 Tape
+3 Paint
+4 Marker
+5 Nail
+6 Nail and HWM tag
+7 Stake
+8 Not marked
+9 Other (Note in Description box)
+10 Chiseled mark"
+height_above_gnd,"Distance from HWM down to ground surface in feet.  Note: use with care; these values are often estimated or rough measurements that could include tree roots, sloping surfaces, etc. immediately beneath the HWM."
+hcollect_method_id,"Method used to find horizontal location of HWM.  Possible values:
+1 Handheld GPS
+2 Static-GNSS
+3 Phone/Car GPS
+4 Map (digital or paper)
+5 Other (Note in Description box)
+6 RT-GNSS"
+peak_summary_id,Unique integer id assigned to each Peak.  Peaks can be assigned to a selected location for a selected event.  One or more HWM or sensor reading can be associated with a peak as evidence of that peak.
+hwm_notes,Primarily surveyors notes but could be flagging notes as well.
+hwm_environment,Flooding caused by Coastal storm or Riverine event.
+flag_date,Date HWM was flagged for later surveying (not date of peak)
+stillwater,"1 = HWM was likely caused in tranquil water location
+0 = HWM was likely caused by swiftly moving water"
+hdatum_id,"Code for reference datum of hoizontal location of HWM.  Current Possibilities:
+1 local control point
+2 NAD83
+3 NAD27
+4 WGS84 (from Digital Map)
+5 NAD 83( CORS96) epoch 2002
+6 NAD 83 (NSRS2007) epoch 2007
+7 NAD 83 (2011) epoch 2010"
+flag_member_id,System id of USGS employee who flagged the HWM
+survey_member_id,System id of USGS employee who surveyed the HWM
+uncertainty,"Uncertainty of HWM survey, in feet.  Note that total uncertainty is a combination of surveyed uncertainty, flagging uncertainty, and other potential factors."
+hwm_uncertainty,"Uncertainty of HWM flagging, in feet.  If blank, technician did not specified a flagging Quality but not a numeric flagging uncertainty (see hwmQuality_id or hwmQualityName).  Note that total uncertainty is a combination of surveyed uncertainty, flagging uncertainty, and other potential factors."
+hwm_label,Name given to HWM to distinguish between this and other HWMs at the same location.
