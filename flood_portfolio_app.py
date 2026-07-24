@@ -11,7 +11,6 @@ import xgboost as xgb
 
 st.set_page_config(
     page_title="Hoboken Flood Risk Portfolio",
-    page_icon="🌊",
     layout="wide",
 )
 
