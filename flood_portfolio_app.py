@@ -209,4 +209,3 @@ elif avg_risk >= 0.4:
 else:
     st.info("This rainfall scenario remains relatively low risk. Most of the portfolio sits below the high-risk probability threshold.")
 
-st.caption("App logic: same Hoboken feature grid + same risk model family + user-adjustable rainfall input = portfolio-style flood-risk scenario explorer.")
